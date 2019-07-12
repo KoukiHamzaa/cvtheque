@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Cv extends Model
 {
     use SoftDeletes;
-    protected $dates =['deleted_at'];
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
+    const DELETED_AT = 'deleted_at';
+
+    protected $primaryKey = 'id';
+    protected $fillable = ['titre', 'presentation', 'birthDate', 'age', 'jobs', 'salary', 'methodOfPayment'];
 }
