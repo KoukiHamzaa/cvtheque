@@ -12,5 +12,5 @@ class Cv extends Model
     const DELETED_AT = 'deleted_at';
 
     protected $primaryKey = 'id';
-    protected $fillable = ['titre', 'presentation', 'birthDate', 'age', 'jobs', 'salary', 'methodOfPayment'];
+    protected $fillable = ['titre', 'presentation', 'birthDate', 'age', 'jobs', 'salary', 'methodOfPayment', 'user_id'];
 }

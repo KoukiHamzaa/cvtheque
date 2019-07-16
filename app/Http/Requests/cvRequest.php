@@ -23,10 +23,14 @@ class cvRequest extends FormRequest
      */
     public function rules()
     {
-       return [
-            /* 'titre' =>'required',
-             'presentation' =>'required' //|min:30|max:100*/
-
+       return [ 
+             'titre' =>'required',
+             'presentation' =>'required |min:30|max:100 ',
+             'birthDate'=>'required',
+             'age'=>'required',
+             'arrJobs'=>'required|array',
+             'salary'=>'required',
+             'arrMethodOfPayment'=>'required|array'
         ];
     }
 }
